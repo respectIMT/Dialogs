@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layout_constraintHeight="7dp"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn_alert"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="Alert Dialog"
+        android:height="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_custom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btn_custom"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="Custom Dialog"
+        android:height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_alert"
+        app:layout_constraintBottom_toBottomOf="@id/btn_fragment"
+    />
+
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="Fragment Dialog"
+        android:height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_custom"
+        app:layout_constraintBottom_toBottomOf="@id/btn_datepicker"
+    />
+
+    <Button
+        android:id="@+id/btn_datepicker"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="DatePicker Dialog"
+        android:height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_fragment"
+        app:layout_constraintBottom_toBottomOf="@id/btn_bottomsheet"
+    />
+
+    <Button
+        android:id="@+id/btn_bottomsheet"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:height="1dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="BottomSheet Dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_datepicker"
+        app:layout_constraintBottom_toBottomOf="@id/btn_timePicker"/>
+
+    <Button
+        android:id="@+id/btn_timePicker"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:height="1dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="TimePicker Dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_bottomsheet"
+        app:layout_constraintBottom_toBottomOf="@id/btn_Snackbar"
+    />
+
+    <Button
+        android:id="@+id/btn_Snackbar"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:height="1dp"
+        android:backgroundTint="#3DB6ED"
+        android:text="Snackbar Dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_timePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
